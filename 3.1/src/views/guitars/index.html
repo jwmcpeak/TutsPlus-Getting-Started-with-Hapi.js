@@ -1,0 +1,18 @@
+{{> page-title }}
+
+{{#each guitars}}
+<div class="row">
+    <div class="col-sm-4">
+        <img src="./img/guitars/{{this.id}}.jpg" class="img-fluid" />
+    </div>
+    <div class="col-sm-8">
+        <h4><a href="/guitars/{{this.id}}">{{this.name}}</a></h4>
+        <ul>
+            <li>{{this.manufacturer}}</li>
+            <li>{{this.year}}</li>
+        </ul>
+    </div>
+</div>
+
+
+{{/each}}
